@@ -75,7 +75,7 @@ const ListingDetails = () => {
         totalPrice: listing.price * dayCount,
       }
 
-      const response = await fetch("http://localhost:3001/bookings/create", {
+      const response = await fetch("https://rentify-server-seven.vercel.app/bookings/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
