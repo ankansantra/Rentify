@@ -24,6 +24,9 @@ app.use("/auth", authRoutes)
 app.use("/properties", listingRoutes)
 app.use("/bookings", bookingRoutes)
 app.use("/users", userRoutes)
+app.use("/", (req,res) => {
+  res.send("Server is running!")
+})
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 3001; 
