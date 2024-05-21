@@ -12,7 +12,7 @@ const userRoutes = require("./routes/user.js")
 
 
 app.use(cors({
-  origin : "https://rentify-flax.vercel.app",
+  origin : ["https://rentify-flax.vercel.app"],
   methods: ["POST", "GET","PATCH", "DELETE"],
   credentials: true
 }));
